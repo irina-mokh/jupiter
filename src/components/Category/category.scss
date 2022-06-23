@@ -1,0 +1,14 @@
+@use '../../styles/vars';
+
+.category {
+  list-style: none;
+  &__label {
+    color: vars.$brown;
+  }
+  &__radio:checked + &__label{
+    color: vars.$green;
+  }
+  &__option {
+    color: vars.$brown;
+  }
+}

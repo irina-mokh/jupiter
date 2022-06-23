@@ -1,0 +1,54 @@
+@use '../../styles/vars';
+
+.header {
+  background-color: vars.$dark-blue;
+  color: vars.$white;
+  padding: 15px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav {
+    max-width: 460px;
+    @media (max-width: vars.$medium) {
+      display: none;
+    }
+    &__list {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      list-style: none;
+      margin: 0 7px;
+    }
+    &__link {
+      text-decoration: none;
+      color: inherit;
+      font-size: 16px;
+    }
+  }
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    color: inherit;
+    text-decoration: none;
+
+    &__text {
+      text-decoration: none;
+      font-size: 24px;
+      color: vars.$white;
+    }
+  }
+  &__btn {
+    height: 48px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: vars.$white;
+    border: 1px solid vars.$white;
+    border-radius: 5px;
+  }
+}

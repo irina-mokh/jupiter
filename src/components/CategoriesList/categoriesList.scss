@@ -1,0 +1,16 @@
+@use '../../styles/vars';
+
+// as labels
+ul.catalog__categories-list{
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 540px;
+  margin: 0 auto;
+}
+// as select
+select.catalog__categories-list{
+  width: 100%;
+  height: 48px;;
+  color: vars.$brown;
+}
