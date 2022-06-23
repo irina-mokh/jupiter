@@ -3,7 +3,6 @@ import { Category } from '../Category';
 import { Card } from '../Card';
 import { CategoriesList } from '../CategoriesList';
 import { cards, categories } from '../data';
-
 const ITEMS_PER_CHUNK = 9;
 
 export const Catalog = () => {
